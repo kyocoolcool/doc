@@ -1,0 +1,1 @@
+subscription-manager register --username xxxxx@mitac.com.tw --password xxxxx --auto-attach
