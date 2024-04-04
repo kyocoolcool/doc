@@ -12,4 +12,4 @@ sudo yum install docker-ce docker-ce-cli containerd.io docker-buildx-plugin dock
 
 啟動Docker
 
-sudo systemctl start docker
+sudo systemctl enable docker --now
