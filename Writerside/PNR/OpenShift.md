@@ -26,10 +26,12 @@ oc adm policy add-scc-to-user anyuid -z default
 
 
 ## image registry
-### 外部url
+### Quay
 podman login https://registry.ocp-cloud.pnr.com:8443 --tls-verify=false
 ### 內部url
 podman login image-registry.openshift-image-registry.svc:5000
+### 外部url
+podman login -u $(oc whoami) -p $(oc whoami -t) default-route-openshift-image-registry.apps.ocp-cloud.pnr.com --tls-verify=false
 
 
 ## install operator
